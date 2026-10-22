@@ -3,15 +3,16 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "predev": "node scripts/copy-pdfjs-assets.mjs",
-    "dev": "vite",
-    "prebuild": "node scripts/copy-pdfjs-assets.mjs",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "node test/lib.test.mjs && node test/a4.test.mjs && node test/certificate.test.mjs && node test/many-stamps.test.mjs && node test/ids.test.mjs && node test/parse.test.mjs",
-    "pretest": "node test/make-sample.mjs"
-  },
+  
+"scripts": {
+  "predev": "node scripts/copy-pdfjs-assets.mjs",
+  "dev": "vite",
+  "prebuild": "node scripts/copy-pdfjs-assets.mjs",
+  "build": "npx vite build",
+  "preview": "vite preview",
+  "test": "node test/lib.test.mjs && node test/a4.test.mjs && node test/certificate.test.mjs && node test/many-stamps.test.mjs && node test/ids.test.mjs && node test/parse.test.mjs",
+  "pretest": "node test/make-sample.mjs"
+},
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.3.0",
     "@fontsource/ibm-plex-sans": "^5.3.0",
